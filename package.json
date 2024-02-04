@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs-mate": "^9.3.1",
+    "ejs-mate": "9.3.1",
     "alert": "^5.1.4",
     "bcrypt": "^5.1.0",
     "body-parser": "^1.20.2",
