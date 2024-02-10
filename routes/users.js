@@ -70,9 +70,7 @@ async function removeFromCart(userId, productId) {
       throw error;
     }
   }
-// router.get("/checkout",(req,res)=>{
-//   res.render('paintings/checkout')
-// })
+
 router.get("/checkout", isLoggedIn, async (req, res) => {
     try {
         const userId = req.session.user_id;
@@ -121,7 +119,6 @@ router.get("/checkout", isLoggedIn, async (req, res) => {
         // Save the updated user
         await user.save();
 
-        // Redirect or send a response as needed
         res.render('paintings/checkout'); // Redirect to a page indicating the order was successful
     } catch (error) {
         console.error(error);
