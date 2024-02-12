@@ -67,11 +67,6 @@ const cart=async(req,res)=>{
         path: 'cart.product',
         model: 'Painting', // Make sure this matches your model name
     });
-    // console.log(user.cart)
-    //       console.log(user.cart[0])
-    //       console.log(user.cart[0].product.name)
-    //       console.log(user.cart[0].product.images)
-    //       console.log(user.cart[0].quantity)
     res.render('paintings/cart',{paintings:user.cart})
 }
     module.exports={signIn,register,loginPage,login,dashboard,cart}
